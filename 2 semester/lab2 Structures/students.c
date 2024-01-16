@@ -26,17 +26,17 @@ void adding(group *student, int N){
 	char tmp[15];
 	student=(group*)realloc(student, sizeof(group)*N);
 	for(i=N-1;i<N;i++){
-		printf("Фамилия:\n");
+		printf("Р¤Р°РјРёР»РёСЏ:\n");
 		scanf("%s", &student[i].surname);
-		printf("Имя:\n");
+		printf("РРјСЏ:\n");
 		scanf("%s", &student[i].name);
-		printf("Отчество:\n");
+		printf("РћС‚С‡РµСЃС‚РІРѕ:\n");
 		scanf("%s", &student[i].patronymic);
-		printf("Дата рождения(в формате дд.мм.гггг):\n");
+		printf("Р”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ(РІ С„РѕСЂРјР°С‚Рµ РґРґ.РјРј.РіРіРіРі):\n");
 		scanf("%d.%d.%d", &student[i].data.day, &student[i].data.month,&student[i].data.year);
 	here:if(student[i].data.month>12){
 			cm++;
-			printf("Не существует такого месяца\n");
+			printf("РќРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ С‚Р°РєРѕРіРѕ РјРµСЃСЏС†Р°\n");
 		}
 		else{
 			cm--;
@@ -44,7 +44,7 @@ void adding(group *student, int N){
 		if((student[i].data.month==1)||(student[i].data.month==3)||(student[i].data.month==5)||(student[i].data.month==7)||(student[i].data.month==8)||(student[i].data.month==10)||(student[i].data.month==12)){
 			if(student[i].data.day>31){
 				cd++;
-				printf("Не существует более 31 дня в месяце!\n");
+				printf("РќРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ Р±РѕР»РµРµ 31 РґРЅСЏ РІ РјРµСЃСЏС†Рµ!\n");
 			}
 			else {
 				cd--;
@@ -53,7 +53,7 @@ void adding(group *student, int N){
 		else if(student[i].data.month!=2){
 			if(student[i].data.day>30){
 				cd++;
-				printf("В этом месяце 30 дней\n");
+				printf("Р’ СЌС‚РѕРј РјРµСЃСЏС†Рµ 30 РґРЅРµР№\n");
 			}
 			else{
 				cd--;
@@ -64,7 +64,7 @@ void adding(group *student, int N){
 				if(student[i].data.month==2){
 					if(student[i].data.day>29){
 						cd++;
-						printf("В високосном году в феврале только 29 дней!\n");
+						printf("Р’ РІРёСЃРѕРєРѕСЃРЅРѕРј РіРѕРґСѓ РІ С„РµРІСЂР°Р»Рµ С‚РѕР»СЊРєРѕ 29 РґРЅРµР№!\n");
 					}
 					else{
 						cd--;
@@ -75,7 +75,7 @@ void adding(group *student, int N){
 				if(student[i].data.month==2){
 					if(student[i].data.day>28){
 						cd++;
-						printf("В феврале 28 дней!!!\n");
+						printf("Р’ С„РµРІСЂР°Р»Рµ 28 РґРЅРµР№!!!\n");
 					}
 					else{
 						cd--;
@@ -85,20 +85,20 @@ void adding(group *student, int N){
 		}
 		if(student[i].data.year>(2020-11-5)){
 			cy++;
-			printf("Не пытайтесь меня обмануть\n");
+			printf("РќРµ РїС‹С‚Р°Р№С‚РµСЃСЊ РјРµРЅСЏ РѕР±РјР°РЅСѓС‚СЊ\n");
 		}
 		else{
 			cy--;
 		}
 		while((cd>0)||(cm>0)||(cy>0)){
-			printf("Дата рождения:\n");
+			printf("Р”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ:\n");
 			scanf("%d.%d.%d", &student[i].data.day, &student[i].data.month,&student[i].data.year);
 			goto here;
 		}
-		printf("Средняя успеваемость:\n");
+		printf("РЎСЂРµРґРЅСЏСЏ СѓСЃРїРµРІР°РµРјРѕСЃС‚СЊ:\n");
 		scanf("%f", &student[i].mark);
 		while(student[i].mark>100){
-			printf("Успеваемость в пределах от 0 до 100. Еще раз:\n");
+			printf("РЈСЃРїРµРІР°РµРјРѕСЃС‚СЊ РІ РїСЂРµРґРµР»Р°С… РѕС‚ 0 РґРѕ 100. Р•С‰Рµ СЂР°Р·:\n");
 			scanf("%f", &student[i].mark);	
 		}
 	}
@@ -134,9 +134,9 @@ void adding(group *student, int N){
 void search1(group *student, int N){
 	int i, c=0;
 	char sur[15];
-	printf("Фамилия:\n");
+	printf("Р¤Р°РјРёР»РёСЏ:\n");
 	scanf("%s", &sur);
-	printf("N\t        Фамилия\t            Имя\t            Отчeство\tДата рождения\tУспеваемость\n");
+	printf("N\t        Р¤Р°РјРёР»РёСЏ\t            РРјСЏ\t            РћС‚С‡eСЃС‚РІРѕ\tР”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ\tРЈСЃРїРµРІР°РµРјРѕСЃС‚СЊ\n");
 	for(i=0;i<N;i++){
 		if(strcmp(sur, student[i].surname)==0){
 			c++;
@@ -144,14 +144,14 @@ void search1(group *student, int N){
 		}
 	}
 	if(c==0){
-		printf("Не найдено. Кто это вообще такой?\n");
+		printf("РќРµ РЅР°Р№РґРµРЅРѕ. РљС‚Рѕ СЌС‚Рѕ РІРѕРѕР±С‰Рµ С‚Р°РєРѕР№?\n");
 	}
 }
 void search2(group *student, int N){
 	int i, ot, doo, c=0;
-	printf("Введите диапазон успеваемости от и до:\n");
+	printf("Р’РІРµРґРёС‚Рµ РґРёР°РїР°Р·РѕРЅ СѓСЃРїРµРІР°РµРјРѕСЃС‚Рё РѕС‚ Рё РґРѕ:\n");
 	scanf("%d %d", &ot, &doo);
-	printf("N\t        Фамилия\t            Имя\t            Отчeство\tДата рождения\tУспеваемость\n");
+	printf("N\t        Р¤Р°РјРёР»РёСЏ\t            РРјСЏ\t            РћС‚С‡eСЃС‚РІРѕ\tР”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ\tРЈСЃРїРµРІР°РµРјРѕСЃС‚СЊ\n");
 	for(i=0;i<N;i++){
 		if((student[i].mark>=ot)&&(student[i].mark<=doo)){
 			c++;
@@ -159,14 +159,14 @@ void search2(group *student, int N){
 		}
 	}
 	if(c==0){
-		printf("Не найдено.\n");
+		printf("РќРµ РЅР°Р№РґРµРЅРѕ.\n");
 	}
 }
 void search3(group *student, int N){
 	int i, dd, mm, c=0;
-	printf("Дата рождения(в формате дд.мм):\n");
+	printf("Р”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ(РІ С„РѕСЂРјР°С‚Рµ РґРґ.РјРј):\n");
 	scanf("%d.%d", &dd, &mm);
-	printf("N\t        Фамилия\t            Имя\t            Отчeство\tДата рождения\tУспеваемость\n");
+	printf("N\t        Р¤Р°РјРёР»РёСЏ\t            РРјСЏ\t            РћС‚С‡eСЃС‚РІРѕ\tР”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ\tРЈСЃРїРµРІР°РµРјРѕСЃС‚СЊ\n");
 	for(i=0;i<N;i++){
 		if((dd==student[i].data.day)&&(mm==student[i].data.month)){
 			c++;
@@ -174,12 +174,12 @@ void search3(group *student, int N){
 		}
 	}
 	if(c==0){
-		printf("Не найдено.\n");
+		printf("РќРµ РЅР°Р№РґРµРЅРѕ.\n");
 	}
 }
 void searching(group *student, int N){
 	int i, n;
-	printf("1. По фамилии.\n2. По диапазону успеваемости.\n3. По дате рождения.\n");
+	printf("1. РџРѕ С„Р°РјРёР»РёРё.\n2. РџРѕ РґРёР°РїР°Р·РѕРЅСѓ СѓСЃРїРµРІР°РµРјРѕСЃС‚Рё.\n3. РџРѕ РґР°С‚Рµ СЂРѕР¶РґРµРЅРёСЏ.\n");
 	scanf("%d",&n);
 	switch(n){
 		case 1:
@@ -195,9 +195,9 @@ void searching(group *student, int N){
 }
 void printing(group *student, int N){
 	int i, n=15;
-	printf("N\t        Фамилия\t            Имя\t            Отчeство\tДата рождения\tУспеваемость\n");
+	printf("N\t        Р¤Р°РјРёР»РёСЏ\t            РРјСЏ\t            РћС‚С‡eСЃС‚РІРѕ\tР”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ\tРЈСЃРїРµРІР°РµРјРѕСЃС‚СЊ\n");
 	if(N==0){
-		printf("Пусто\n");
+		printf("РџСѓСЃС‚Рѕ\n");
 	}
 	for(i=0;i<N;i++){
 		printf("%d\t%15s\t%15s\t%20s\t%02d.%02d.%04d\t%.2f\n", i+1, student[i].surname, student[i].name, student[i].patronymic, student[i].data.day, student[i].data.month, student[i].data.year, student[i].mark);
@@ -210,7 +210,7 @@ int main(){
 	group *student;
 	student=(group*)malloc(N*sizeof(group));
 	while(1){
-	printf("1. Добавить студента.\n2. Поиск студента.\n3. Удаление студента.\n4. Печать группы.\n5. Выход\n");
+	printf("1. Р”РѕР±Р°РІРёС‚СЊ СЃС‚СѓРґРµРЅС‚Р°.\n2. РџРѕРёСЃРє СЃС‚СѓРґРµРЅС‚Р°.\n3. РЈРґР°Р»РµРЅРёРµ СЃС‚СѓРґРµРЅС‚Р°.\n4. РџРµС‡Р°С‚СЊ РіСЂСѓРїРїС‹.\n5. Р’С‹С…РѕРґ\n");
 	scanf("%d",&p);
 		switch(p){
 			case 1:
@@ -223,10 +223,10 @@ int main(){
 		    	searching(student,N);
 	        	break;
 	    	case 3:
-	    		printf("Введите номер студента, который будет исключен:\n");
+	    		printf("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ СЃС‚СѓРґРµРЅС‚Р°, РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ РёСЃРєР»СЋС‡РµРЅ:\n");
 	    		scanf("%d", &t);
 	    		if(t>N){
-	    			printf("Нет такого студента\n");
+	    			printf("РќРµС‚ С‚Р°РєРѕРіРѕ СЃС‚СѓРґРµРЅС‚Р°\n");
 				}
 	    		deleting(student, N-=1, t);
 	            break;
