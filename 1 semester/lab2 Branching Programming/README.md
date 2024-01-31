@@ -1,6 +1,6 @@
-Algorithmization and Programming - lab work #1
+Algorithmization and Programming - lab work #2
 
-## Laboratory Work #2 Number Systems
+## Laboratory Work #2 Branching Programming
 
 ## **Task 1:**
 
@@ -18,9 +18,9 @@ Write a program that by the number of the day of the week (an integer from 1 to 
 lectures and practical classes.
 the number of lectures and practical classes in your group on that day.
 
-Алгоритмизация и программирование – лабораторная работа №1
+Алгоритмизация и программирование – лабораторная работа №2
 
-# Лабораторная работа №2 Системы счисления
+# Лабораторная работа №2 Программирование ветвлений
 
 ## **Задание 1:**
 
