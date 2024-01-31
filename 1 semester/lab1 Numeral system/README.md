@@ -24,5 +24,3 @@ Three integers are given. Find the number of positive numbers in the initial set
 N=232 k=8
 ## **Задание 3:**
 Даны три целых числа. Найти количество положительных чисел в исходном наборе.
-
-
