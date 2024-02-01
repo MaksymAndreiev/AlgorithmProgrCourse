@@ -25,9 +25,11 @@ until the next summand is modulo less than $\varepsilon$. Enter the value of $\v
 from the keyboard.
 Output the results in the form of a table.
 
-$$F(x) = \sum_{k=1}^{\infty} \frac{(-1)^{k+1} \cdot (2^{2k-1}x^{2k})}{(2k)!}$$
-$$$S(x) = \sum_{k=1}^{\infty} \frac{(-1)^{k+1} \cdot (2^{2k-1}x^{2k})}{(2k)!} - \sin(x)^2 $$$
-$$x = 0, 1, \ldots, 10 \quad \text{and} \quad \varepsilon = 10^{-6}$$$.
+$$F(x) = \sum_{k=1}^{\infty} \(-1)^{k+1}  \frac{2^{2k-1}x^{2k}}{(2k)!}$$
+
+$$S(x) = F(x) - \sin(x)^2 $$
+
+$$x = 0, 1, \ldots, 10 \quad  \quad \varepsilon = 10^{-6}$$
 
 ## **Task 4:**
 
@@ -60,9 +62,11 @@ N=232 k=8
 клавиатуры.\
 Результаты вывести в виде таблицы.
 
-$$F(x) = \sum_{k=1}^{\infty} \frac{(-1)^{k+1} \cdot (2^{2k-1}x^{2k})}{(2k)!}$$
-$$S(x) = \sum_{k=1}^{\infty} \frac{(-1)^{k+1} \cdot (2^{2k-1}x^{2k})}{(2k)!} - \sin(x)^2 $$
-$$x = 0, 1, \ldots, 10 \quad \text{and} \quad \varepsilon = 10^{-6}$$
+$$F(x) = \sum_{k=1}^{\infty} \(-1)^{k+1}  \frac{2^{2k-1}x^{2k}}{(2k)!}$$
+
+$$S(x) = F(x) - \sin(x)^2 $$
+
+$$x = 0, 1, \ldots, 10 \quad  \quad \varepsilon = 10^{-6}$$
 
 ## **Задание 4:**
 
