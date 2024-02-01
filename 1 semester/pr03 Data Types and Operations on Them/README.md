@@ -14,7 +14,7 @@ Declare three or more variables of different sizes. Find out their addresses.
 According to sociologists, out of N questioned people on the streets of Kharkov, M people. Using the operation of
 conversion to the double type, write a program that will help the sociologists to determine how many percent of
 respondents are going to vote for the Party of Programmers. determine how many percent of respondents are going to vote
-for the Party of Programmers. Represent the result as as an integer, discarding the fractional part. Build for your
+for the Party of Programmers. Represent the result as an integer, discarding the fractional part. Build for your
 program a tree of expression parsing with the indication of transformations of
 types.
 
