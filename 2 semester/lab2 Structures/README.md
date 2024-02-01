@@ -1,6 +1,6 @@
 Algorithmization and Programming - lab work #2
 
-#Laboratory Work #2 Structures
+# Laboratory Work #2 Structures
 
 Develop a data structure of type **struct** to represent information about an academic group of students, as follows:
 
