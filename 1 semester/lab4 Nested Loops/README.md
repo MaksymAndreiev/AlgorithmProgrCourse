@@ -1,6 +1,6 @@
 Algorithmization and Programming - lab work #4
 
-## Lab work #4 Nested Loops
+## Laboratory work #4 Nested Loops
 
 ## **Task 1:**
 
