@@ -6,6 +6,8 @@ Make a program according to the block diagram in Fig. 1 and test it. Rewrite the
 ways: using the for loop and the do-while loop.
 in two different ways: using a for loop and a do-while loop.
 
+![image](https://github.com/MaksymAndreiev/AlgorithmProgrCourse/assets/29687267/211081ef-7373-40f1-8e67-2b6def33c9b4)
+
 ## Task 2
 
 Write a program to calculate the factorial of a non-negative integer N. Check the correctness of its operation at N=0.
@@ -31,6 +33,8 @@ A sequence of n integers is input (n is set from the keyboard). Find the number 
 
 Составьте программу по блок-схеме на рис. 1, протестируйте ее. Перепишите получившуюся программу еще двумя различными
 способами: с использованием цикла for и цикла do-while.
+
+![image](https://github.com/MaksymAndreiev/AlgorithmProgrCourse/assets/29687267/211081ef-7373-40f1-8e67-2b6def33c9b4)
 
 ## Задание 2
 
