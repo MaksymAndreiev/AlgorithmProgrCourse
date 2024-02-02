@@ -1,6 +1,6 @@
 Algorithmization and Programming - lab work #5
 
-## Laboratory Work #5 One-Dimensional Array
+# Laboratory Work #5 One-Dimensional Array
 
 ## **Task 1:**
 

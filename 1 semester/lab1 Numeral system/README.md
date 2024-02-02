@@ -1,6 +1,6 @@
 Algorithmization and Programming - lab work #1
 
-## Laboratory Work #1 Numerical Systems
+# Laboratory Work #1 Numerical Systems
 
 ## **Task 1:**
 Given a distance L in centimeters. Using the division operation, find

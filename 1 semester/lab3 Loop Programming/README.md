@@ -1,6 +1,6 @@
 Algorithmization and Programming - lab work #3
 
-## Laboratory work #3 Programming loops
+# Laboratory work #3 Programming loops
 
 ## **Task 1:**
 

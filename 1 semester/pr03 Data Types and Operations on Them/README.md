@@ -1,4 +1,4 @@
-## Practical Work #3 Data Types and Operations on Them
+# Practical Work #3 Data Types and Operations on Them
 
 ## Task 1
 

@@ -1,6 +1,6 @@
 Algorithmization and Programming - lab work #6
 
-## Laboratory Work #6 Multidimensional Array
+# Laboratory Work #6 Multidimensional Array
 
 ## Task 1:
 

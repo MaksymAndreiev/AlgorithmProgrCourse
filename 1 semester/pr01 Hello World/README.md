@@ -1,4 +1,4 @@
-## Practical Work #1 Integrated Development Environment Dev-C++
+# Practical Work #1 Integrated Development Environment Dev-C++
 
 ## Task
 

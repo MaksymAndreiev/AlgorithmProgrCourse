@@ -1,6 +1,6 @@
 Algorithmization and Programming - lab work #2
 
-## Laboratory Work #2 Branching Programming
+# Laboratory Work #2 Branching Programming
 
 ## **Task 1:**
 
