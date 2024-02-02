@@ -7,14 +7,14 @@ int main() {
     float del;
     sum = 0;
     prov = 2;
-    printf(":\n");
+    printf("Введите натуральное число:\n");
     scanf("%d", &num);
     if (num <= 0) {
-        printf("\n");
+        printf("Это не натуральное число! Будьте внимательнее\n");
         return 0;
     }
     if (num == 1) {
-        printf("\n");
+        printf("Ни простое, ни составное\n");
         return 0;
     }
     while (prov < num) {
@@ -25,9 +25,9 @@ int main() {
         prov++;
     }
     if (del > 0) {
-        printf("\n");
+        printf("Это простое число\n");
     } else {
-        printf("\n");
+        printf("Это составное число\n");
     }
     return 0;
 }
