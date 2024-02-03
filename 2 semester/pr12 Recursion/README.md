@@ -1,4 +1,4 @@
-## Practice Paper #12 Recursion
+# Practice Paper #12 Recursion
 
 ## Task 1.
 
