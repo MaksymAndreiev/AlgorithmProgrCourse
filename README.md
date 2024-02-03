@@ -1,3 +1,9 @@
+<div style="display: flex;">
+    <img src="https://static8.tgstat.ru/channels/_0/ce/ceecb42fcf878251779474152143188f.jpg" width="40" height="40">
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="http://geometry.karazin.ua/themes/frontend/images/univer_logo.jpg" width="40" height="40">
+</div>
+
 # Algorithmization and Programming
 Workshop on the course "Algorithmization and Programming" at V. N. Karazin Kharkiv National University, which I took in the 1st year in 2019-2020 at the Computer Science Department. The purpose of teaching the discipline is to provide students with knowledge and
 skills in the use and development of algorithms specialized for solving various classes of problems. The programming language studied was C. The repository contains tasks of laboratory and (or) practical works and my solutions to them. 
